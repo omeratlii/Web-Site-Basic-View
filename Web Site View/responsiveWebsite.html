@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f1f1f1;
+            padding: 10px;
+        }
+
+        .header {
+            padding: 25px;
+            background: #E0EAFC;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #CFDEF3, #E0EAFC);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            text-align: center;
+        }
+
+        .nav {
+            overflow: hidden;
+            background-color: black;
+        }
+
+        .nav a {
+            padding: 15px 17px;
+            float: left;
+            color: white;
+            text-decoration: none;
+        }
+
+        .nav a:hover {
+            background-color: gray;
+        }
+
+        .sol {
+            float: left;
+            width: 75%;
+        }
+
+        .sag {
+            float: left;
+            width: 25%;
+            padding-left: 20px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin: 20px 0px;
+        }
+
+        .fakeimage {
+            background: #F0F2F0;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #000C40, #F0F2F0);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #bec6ed, #F0F2F0);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            padding: 30px;
+            width: 100%;
+        }
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background-color: #ddd;
+            height: 100px;
+        }
+
+        @media only screen and (max-width:800px) {
+
+            .sol,
+            .sag {
+                width: 100%;
+                padding-left: 0px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>My Website</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+    <div class="nav">
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#" style="float: right;">Link</a>
+    </div>
+    <div class="row">
+        <div class="sol">
+            <div class="card">
+                <h2>TITLE HEADING</h2>
+                <h5>Title Description, June 14 2023</h5>
+                <div class="fakeimage" style="height: 200px;">Image</div>
+                <p>Some text...</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque vel nisi repudiandae eum. Maxime
+                    saepe possimus expedita hic rerum tenetur?</p>
+            </div>
+            <div class="card">
+                <h2>TITLE HEADING</h2>
+                <h5>Title Description, June 14 2023</h5>
+                <div class="fakeimage" style="height: 200px;">Image</div>
+                <p>Some text...</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque vel nisi repudiandae eum. Maxime
+                    saepe possimus expedita hic rerum tenetur?</p>
+            </div>
+        </div>
+
+        <div class="sag">
+            <div class="card">
+                <h2>About Me</h2>
+                <div class="fakeimage" style="height: 100px;">Image</div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente earum aliquid neque.</p>
+            </div>
+
+            <div class="card">
+                <h3>Populer Post</h3>
+                <div class="fakeimage">Image</div>
+                <div class="fakeimage">Image</div>
+                <div class="fakeimage">Image</div>
+            </div>
+            <div class="card">
+                <h3>Follow Me</h3>
+                <p>Some text...</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h2>Footer</h2>
+    </div>
+</body>
+
+</html>

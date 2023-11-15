@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+</head>
+<style>
+    .header {
+        padding: 60px;
+        background-color: #1abc9c;
+        text-align: center;
+        color: white;
+    }
+
+    .navbar {
+        display: flex;
+        background-color: #333;
+        margin-bottom: 10px;
+    }
+
+    .navbar a {
+        color: white;
+        text-decoration: none;
+        padding: 14px 20px;
+        text-align: center;
+    }
+
+    .navbar a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+    .row {
+        display: flex;
+        margin-top: 10px;
+    }
+
+    .side {
+        flex: 30%;
+        background-color: #f1f1f1;
+        padding: 20px;
+        margin-right: 10px;
+    }
+
+    .main {
+        flex: 70%;
+        padding: 20px;
+        margin-left: 10px;
+    }
+
+    .fakeimage {
+        background-color: #aaa;
+        padding: 20px;
+        height: 200px;
+    }
+
+    .fakeimage2 {
+        background-color: #aaa;
+        padding: 20px;
+        margin-top: 5px;
+    }
+
+    .footer {
+        background-color: #ddd;
+        text-align: center;
+        padding: 20px;
+        margin-top: 10px;
+    }
+
+    @media only screen and (max-width:1000px) {
+        .navbar, .row {
+            flex-direction: column;
+        }
+    }
+</style>
+<body>
+    <div style="background-color: yellow; padding: 5px;">
+        <h4 style="text-align: center; font-weight: 100;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+    </div>
+
+    <div class="header">
+        <h1>My Website</h1>
+        <p>With a <b>Flexible</b> Layout.</p>
+    </div>
+
+    <div class="navbar">
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+    </div>
+
+    <div class="row">
+        <div class="side">
+            <h2>About Me</h2>
+            <p>Photo of me:</p>
+            <div class="fakeimage">image</div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, saepe modi!</p>
+            <h3>More Text</h3>
+            <p>Lorem ipsum dolor sit.</p>
+            <div class="fakeimage2">image</div>
+            <div class="fakeimage2">image</div>
+            <div class="fakeimage2">image</div>
+        </div>
+        <div class="main">
+            <h2>TITLE HEADING</h2>
+            <p>Title Description, 16 June 2023</p>
+            <div class="fakeimage">image</div>
+            <p>Some Text</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum repellat provident aliquid laudantium possimus suscipit porro nihil veritatis incidunt facilis.</p>
+            <br>
+            <h2>TITLE HEADING</h2>
+            <p>Title Description, 16 June 2023</p>
+            <div class="fakeimage">image</div>
+            <p>Some Text</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum repellat provident aliquid laudantium possimus suscipit porro nihil veritatis incidunt facilis.</p>   
+        </div>
+    </div>
+    <div class="footer">
+        <h2>Footer</h2>
+    </div>
+</body>
+</html>
